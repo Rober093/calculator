@@ -1,0 +1,158 @@
+:root{
+    --fuenteheading: 'PT Sans', sans-serif;
+    --fuenteparrafos: 'open sans', sans-serif;
+
+    --primario: #784d3c;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: center;
+    margin: 0;
+}
+
+/* Globales */
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteheading);
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tabla {
+    margin: 0 auto;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+th:nth-child(odd),
+td:nth-child(odd) {
+    background-color: #e6f7ff;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#salario,
+#opcion {
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.borrar {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+    background-color: #00ccff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+}
+
+.borrar:hover {
+    background-color: #00b3cc;
+}
+
+
+.footer {
+    background-color: #E6F7FF;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-icons a {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-text {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+}

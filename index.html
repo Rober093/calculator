@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Salario</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<h1>Calculadora de Salario de El Salvador</h1>
+<div class="formulario">
+  <label for="salario">Ingresa tu salario:</label>
+  <input type="number" id="salario" min="0">
+  <br>
+  <label for="opcion">Opcion:</label>
+  <select id="opcion">
+    <option value="mensual">Mensual</option>
+    <option value="quincenal">Quincenal</option>
+    <option value="semanal">Semanal</option>
+  </select>
+  <br>
+  <button onclick="calcularSalario()">Calcular</button>
+  <button onclick="borrarDatos()" class="borrar">Borrar</button>
+</div>
+<div class="tabla">
+  <table>
+    <tr>
+      <td>Calculo de salario:</td>
+      <td id="calculo-salario"></td>
+    </tr>
+    <tr>
+      <td>AFP Patronal:</td>
+      <td id="afp-patronal"></td>
+    </tr>
+    <tr>
+      <td>ISSS Patronal:</td>
+      <td id="isss-patronal"></td>
+    </tr>
+    <tr>
+      <td>ISSS Laboral:</td>
+      <td id="isss-laboral"></td>
+    </tr>
+    <tr>
+      <td>AFP Laboral:</td>
+      <td id="afp-laboral"></td>
+    </tr>
+    <tr>
+      <td>Salario(-)AFP:</td>
+      <td id="salario-afp"></td>
+    </tr>
+    <tr>
+      <td>Descuento total:</td>
+      <td id="descuento-total"></td>
+    </tr>
+    <tr>
+      <td>Impuesto sobre la Renta:</td>
+      <td id="impuesto-renta"></td>
+    </tr>
+    <tr>
+      <td>Salario Liquido:</td>
+      <td id="salario-liquido"></td>
+    </tr>
+  </table>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer">
+  <div class="footer-icons">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:rober_cordova93@hotmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+  <p class="footer-text">© Designed by Roberto Córdova</p>
+</footer>
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
+
